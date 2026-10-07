@@ -1,0 +1,91 @@
+
+body {
+  background-color: #f4f6f8;
+  color: #2b2d42;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+
+.task-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+.task-subheading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #457b9d;
+}
+
+.task-text {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+
+@media (min-width: 768px) {
+  .task-heading { font-size: 1.75rem; }
+  .task-subheading { font-size: 1.15rem; }
+  .task-text { font-size: 1rem; }
+}
+
+@media (min-width: 1024px) {
+  .task-heading { font-size: 2rem; }
+  .task-subheading { font-size: 1.25rem; }
+}
+
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
+.custom-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.custom-card p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .box-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .custom-card {
+    width: calc(50% - 0.5rem);
+  }
+
+  .custom-card:last-child {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .box-wrapper {
+    flex-direction: row;
+  }
+
+  .custom-card {
+    width: calc(33.333% - 0.67rem);
+  }
+}
